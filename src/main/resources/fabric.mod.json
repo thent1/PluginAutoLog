@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pluginautolog",
+	"version": "${version}",
+	"name": "PluginAutoLog",
+	"description": "This mod created for servers with login plugin",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/pluginautolog/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.thent1.pluginautolog.PluginAutoLog"
+		],
+		"client": [
+			"com.thent1.pluginautolog.PluginAutoLogClient"
+		],
+		"fabric-datagen": [
+			"com.thent1.pluginautolog.PluginAutoLogDataGenerator"
+		]
+	},
+	"mixins": [
+		"pluginautolog.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": ">=0.88.1+1.20.1"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
